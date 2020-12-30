@@ -1,7 +1,11 @@
 version: "3.7"
 
 services:
-  pulumi:
+  build:
+    image: klakegg/hugo:0.79.1
+    volumes:
+      - .:/src
+  server:
     container_name: local-hugo
     image: klakegg/hugo:0.79.1
     command: server
