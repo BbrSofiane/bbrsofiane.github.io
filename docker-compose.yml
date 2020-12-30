@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  pulumi:
+    container_name: local-hugo
+    image: klakegg/hugo:0.79.1
+    command: server
+    volumes:
+      - .:/src
+    ports:
+      - "1313:1313"
