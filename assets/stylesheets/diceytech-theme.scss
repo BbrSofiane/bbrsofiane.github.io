@@ -1,0 +1,57 @@
+/**
+ * Dicey Tech theme for reveal.js.
+ *
+ */
+
+@import "../../themes/reveal-hugo/assets/reveal-js/css/theme/template/mixins";
+@import "../../themes/reveal-hugo/assets/reveal-js/css/theme/template/settings";
+
+// Dicey Tech colors
+//
+$red: #d9534f;
+$usc_gold: #ffc803;
+$dark_cyan: #0f7087;
+$very_dark_magenta: #440641;
+$bright_turquoise: #0cebdc;
+$vivid_cyan: #23c9ff;
+$pale_violet: #a18fff;
+$vivid_cerise: #d9167e;
+$fern: #61ce70;
+$white: #ffffff;
+$blue: #022260;
+
+$primary: $very_dark_magenta;
+$secondary: $dark_cyan;
+
+// Background of the presentation
+$backgroundColor: $white;
+
+// Primary/body text
+$mainColor: $primary;
+$mainFont: "Baloo 2", cursive;
+
+// Headings
+$headingColor: $primary;
+$headingFont: "Baloo 2", cursive;
+
+// Text selection
+$selectionBackgroundColor: $secondary;
+$selectionColor: $usc_gold;
+
+$linkColor: $secondary;
+$linkColorHover: lighten($linkColor, 15%);
+//$selectionBackgroundColor: lighten($linkColor, 25%);
+
+@import "../../themes/reveal-hugo/assets/reveal-js/css/theme/template/theme";
+
+section.has-dark-background {
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $usc_gold;
+  }
+}

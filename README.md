@@ -4,4 +4,8 @@
 
 # about-me
 
-https://hub.docker.com/r/klakegg/hugo/
+Run with:
+
+```
+$ make up
+```

@@ -1,4 +1,4 @@
-start:
+new:
 	docker-compose run build new site .
 
 up:
@@ -6,3 +6,6 @@ up:
 
 stop:
 	docker-compose stop
+
+restart:
+	docker-compose restart

@@ -1,3 +1,35 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+author = "Sofiane Bebert"
+disableKinds = ["sitemap", "RSS"]
+
+theme="reveal-hugo"
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+
+## Site Settings
+[params]
+author = "Sofiane Bebert"
+intro = "Co-founder & CTO @ Dicey Tech"
+description = "---"
+authorimage = "headshot.jpg"
+dateformat = "Jan 2, 2006"
+
+[params.logo]
+src = "https://3ducate-marketing.s3-eu-west-1.amazonaws.com/Dicey_Tech_Make_and_Learn.png"
+alt = ""
+top = "80%"
+left = "1%"
+
+[params.reveal_hugo]
+custom_theme = "stylesheets/diceytech-theme.scss"
+custom_theme_compile = true
+
+## Social Accounts
+[params.social]
+github = "<username>"
+instagram = "<username>"
