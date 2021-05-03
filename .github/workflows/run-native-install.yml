@@ -29,13 +29,10 @@ jobs:
       - name: Ansible Bootstrap
         run: wget https://raw.githubusercontent.com/edx/configuration/$OPENEDX_RELEASE/util/install/ansible-bootstrap.sh -O - | sudo -E bash
       - name: Generate passwords
-        run: |
-          wget https://raw.githubusercontent.com/edx/configuration/$OPENEDX_RELEASE/util/install/generate-passwords.sh -O - | bash
-          ls -l
+        run: wget https://raw.githubusercontent.com/edx/configuration/$OPENEDX_RELEASE/util/install/generate-passwords.sh -O - | bash
       - name: Create config.yml
         run: |
-          echo -e "EDXAPP_LMS_BASE: '$(curl ipinfo.io/ip)'\nEDXAPP_CMS_BASE: '$(curl ipinfo.io/ip):18010'\nSANDBOX_ENABLE_DISCOVERY: true" > config.yml
-          ls -l
+          echo -e "EDXAPP_LMS_BASE: '$(curl ipinfo.io/ip)'\nEDXAPP_CMS_BASE: '$(curl ipinfo.io/ip):18010'\ndiscovery_environment:\n- DISCOVERY_CFG: '{{ COMMON_CFG_DIR }}/{{ discovery_service_name }}.yml'\n- HOME: '/edx/app/discovery'" > config.yml
       - name: Native Install
         run: |
           wget https://raw.githubusercontent.com/edx/configuration/$OPENEDX_RELEASE/util/install/native.sh -O - | bash
