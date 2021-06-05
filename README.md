@@ -4,6 +4,10 @@
 
 # about-me
 
+```
+git clone git@github.com:BbrSofiane/about-me.git --recurse-submodules
+```
+
 Run with:
 
 ```
