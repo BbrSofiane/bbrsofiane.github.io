@@ -4,7 +4,7 @@ outputs = ["Reveal"]
 [logo]
 +++
 
-# Hi everyone <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px">
+# Hey everyone <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px">
 
 I'm Sofiane, Co-𝙵𝚘𝚞𝚗𝚍𝚎𝚛 𝚊𝚗𝚍 CTO 𝚊𝚝 [Dicey Tech](http://diceytech.co.uk/)
 
@@ -19,7 +19,7 @@ I'm Sofiane, Co-𝙵𝚘𝚞𝚗𝚍𝚎𝚛 𝚊𝚗𝚍 CTO 𝚊𝚝 [Dicey Te
 
 ---
 
-## A bit about me
+## A bit about me 🎊
 
 - Grew up in Niger (Different from Nigeria)
 - In 2011, I started an MEng in Mechatronic Engineering

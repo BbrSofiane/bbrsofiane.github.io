@@ -1,35 +1,144 @@
-baseURL = "http://example.org/"
+baseurl      = "https://bbrsofiane.github.io"
+title        = "I will name this site later"
+author       = "Sofiane Bebert"
 languageCode = "en-us"
-title = "My New Hugo Site"
-author = "Sofiane Bebert"
-disableKinds = ["sitemap", "RSS"]
-
-theme="reveal-hugo"
+theme        = ["hello-friend-ng", "reveal-hugo"]
+paginate     = 10
+#publishDir = "content"
 
 [outputFormats.Reveal]
-baseName = "index"
-mediaType = "text/html"
-isHTML = true
+baseName    = "index"
+mediaType   = "text/html"
+isHTML      = true
 
-## Site Settings
 [params]
-author = "Sofiane Bebert"
-intro = "Co-founder & CTO @ Dicey Tech"
-description = "---"
-authorimage = "headshot.jpg"
-dateformat = "Jan 2, 2006"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
 
-[params.logo]
-src = "https://3ducate-marketing.s3-eu-west-1.amazonaws.com/Dicey_Tech_Make_and_Learn.png"
-alt = ""
-top = "80%"
-left = "1%"
+  # Subtitle for home
+  homeSubtitle = "How to pip install learning OS"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # favicon_32 = "/images/favicon-32x32.png"
+  # favicon_16 = "/images/favicon-16x16.png"
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+# Colors for favicons
+  #
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    src = "https://3ducate-marketing.s3-eu-west-1.amazonaws.com/Dicey_Tech_Make_and_Learn.png"
+    alt = ""
+    top = "80%"
+    left = "1%"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Commento is more than just a comments widget you can embed — 
+  # it’s a return to the roots of the internet. 
+  # An internet without the tracking and invasions of privacy. 
+  # An internet that is simple and lightweight. 
+  # An internet that is focused on interesting discussions, not ads. 
+  # A better internet.
+  # Uncomment this to enable Commento.
+  #
+  # [params.commento]
+  #   url = ""
+
+  # Uncomment this if you want a portrait on your start page
+  #
+  [params.portrait]
+     path     = "/img/profile_pic.jpg"
+     alt      = "Portrait"
+     maxWidth = "300px"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/SofianeBbr"
+    weight = 3
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:s.bebert@diceytech.co.uk"
+    weight = 4
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/BbrSofiane"
+    weight = 1
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/sofiane-bebert/"
+    weight = 2
 
 [params.reveal_hugo]
-custom_theme = "stylesheets/diceytech-theme.scss"
-custom_theme_compile = true
+    custom_theme = "stylesheets/diceytech-theme.scss"
+    custom_theme_compile = true
 
-## Social Accounts
-[params.social]
-github = "<username>"
-instagram = "<username>"
+[languages]
+  [languages.en]
+    title = "Learning OS"
+    subtitle = "Learn and Teach 2.0"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "Learning OS 2.0"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.fr]
+    subtitle  = "Hello Friend NG Theme"
+    weight    = 2
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Blog"
+    url        = "/posts/"
+    weight     = 1
+  
+  [[menu.main]]
+    identifier = "talks"
+    name       = "Talks"
+    url        = "/talks/"
+    weight     = 2
+
+  [[menu.main]]
+    identifier = "diceytech"
+    name       = "Dicey Tech"
+    url        = "https://diceytech.co.uk/"
+    weight     = 3
